@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex: 1;
+  }
+}
+
+p,
+a,
+label {
+  font-size: 0.9rem;
+  font-family: $font-raleway;
+  color: $dark-color;
+  text-decoration: none;
+  margin: 0;
+
+  @include desktop {
+    font-size: 1rem;
+  }
+}
+
+h2 {
+  font-family: $font-playfair;
+  font-size: 1.4rem;
+  font-weight: 400;
+}

@@ -1,0 +1,140 @@
+@include phone {
+  .footer-desktop {
+    display: none;
+  }
+
+  .footer-block {
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__contact {
+      order: 2;
+      margin: 1rem 1rem 0 1rem;
+      line-height: 1.75rem;
+
+      a:active {
+        text-decoration: underline;
+      }
+
+      span {
+        font-weight: $bold;
+      }
+    }
+
+    &__newsletter {
+      order: 1;
+      text-align: center;
+      margin-top: 1rem;
+
+      label {
+        font-weight: $bold;
+        letter-spacing: 0.20rem;
+      }
+
+      .newsletter {
+        font-family: $font-raleway;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0.5rem 0 0;
+        border: none;
+        background-color: $creme-color;
+      }
+
+      .btn--dark {
+        font-family: $font-roboto;
+      }
+    }
+
+    &__socials {
+      order: 3;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 1rem 0;
+      margin-top: 0.5rem;
+      background-color: $creme-color;
+
+      .logo {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@include desktop {
+  .footer-phone {
+    display: none;
+  }
+
+  .footer-desktop {
+    background-color: $creme-color;
+  }
+
+  .footer-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+
+
+    &__contact {
+      display: flex;
+      flex-direction: column;
+
+      a {
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        font-weight: $bold;
+      }
+    }
+
+    &__bottom {
+
+
+      &__newsletter {
+        form {
+          .newsletter {
+            padding: 0.4rem 1rem;
+            font-size: 0.9rem;
+          }
+
+          label {
+            letter-spacing: 0.2rem;
+            font-weight: $bold;
+          }
+
+          label,
+          input {
+            margin: 1rem 0;
+          }
+        }
+      }
+
+
+
+      &__socials {
+        text-align: center;
+        padding: 1rem 0 0 0;
+
+        .logo {
+          width: 2rem;
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+}

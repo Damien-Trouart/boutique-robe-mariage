@@ -1,0 +1,137 @@
+@include phone {
+
+  .about-flexbox {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+    p {
+      padding: 1rem 0;
+    }
+
+    &__1,
+    &__2,
+    &__3,
+    &__4 {
+      min-height: 33vh;
+      width: 100%;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+    }
+
+    &__1 {
+      background-image: url("/photos/about/lemon.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    &__2 {
+      background-color: $dark-color;
+
+      h2 {
+        text-align: end;
+      }
+
+      p,
+      h2 {
+        color: $white-color;
+      }
+
+      &__img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+
+    &__3 {
+      background-color: $main-color;
+
+    }
+
+    &__4 {
+      background-color: $creme-color;
+    }
+  }
+}
+
+@include desktop {
+
+  .about-flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 10rem;
+    box-sizing: border-box;
+
+    p {
+      text-align: justify;
+
+    }
+
+    &__1,
+    &__2,
+    &__3,
+    &__4 {
+      width: 50%;
+      height: 60vh;
+      padding: 2rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__1 {
+      background-color: $main-color;
+
+      p {
+        padding: 5rem 20rem;
+      }
+
+    }
+
+    &__2 {
+      background-color: $creme-color;
+
+      p {
+        padding: 5rem 10rem;
+      }
+
+      &__img {
+        width: 55%;
+        height: 30vh;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+
+    &__3 {
+      background-color: $creme-color;
+      display: flex;
+      flex-direction: row;
+
+      &__text {
+        padding: 5rem;
+      }
+    }
+
+    &__4 {
+      background-color: $main-color;
+    }
+  }
+}

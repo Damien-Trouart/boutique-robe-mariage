@@ -1,0 +1,288 @@
+@include phone {
+  .carousel-home {
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      &__slide {
+        display: flex;
+        transition: transform 0.3s ease;
+
+        &__collection {
+          min-width: 100%;
+          text-align: center;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+
+          h2 {
+            font-family: $font-playfair;
+            top: 5%;
+            color: $white-color;
+            border: 1px solid $white-color;
+            background-color: $trans-dark-color;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          a {
+            min-width: 9rem;
+            font-size: 0.8rem;
+            font-family: $font-raleway;
+            transform: translateX(-50%);
+            left: 50%;
+            position: absolute;
+            bottom: 5%;
+          }
+        }
+      }
+
+      .btn--carousel {
+        &--left {
+          left: 0;
+        }
+
+        &--right {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .main-oui {
+    .carousel-oui {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .carousel-container {
+        position: relative;
+        width: 80%;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+
+        &__slide {
+          display: flex;
+          transition: transform 0.3s ease;
+
+          &__img {
+            position: relative;
+            min-width: 100%;
+            height: 400px;
+            padding: 1rem 0.5rem;
+            box-sizing: border-box;
+            overflow: hidden;
+
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-about {
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      &__slide {
+        display: flex;
+        transition: transform 0.3s ease;
+
+        &__img {
+          min-width: 100%;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+
+      .btn--carousel {
+        &--left {
+          left: 0;
+        }
+
+        &--right {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@include desktop {
+
+  .carousel-home {
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      &__slide {
+        display: flex;
+        transition: transform 0.3s ease;
+
+        &__collection {
+          min-width: 100%;
+          max-height: 60vh;
+          text-align: center;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+
+          h2 {
+            font-family: $font-playfair;
+            font-size: 3rem;
+            color: $white-color;
+            background-color: $trans-dark-color;
+            border: 1px solid $white-color;
+            top: 5%;
+            padding: 2rem;
+            box-sizing: border-box;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          a {
+            min-width: 9rem;
+            font-size: 1.5rem;
+            font-family: $font-raleway;
+            transform: translateX(-50%);
+            left: 50%;
+            position: absolute;
+            bottom: 5%;
+          }
+        }
+      }
+
+      button {
+        font-size: 10rem;
+        font-weight: 100;
+      }
+    }
+  }
+
+
+  .carousel-about {
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      &__slide {
+        display: flex;
+        transition: transform 0.3s ease;
+
+        &__img {
+          min-width: 100%;
+          max-height: 50vh;
+          text-align: center;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+
+      button {
+        font-size: 3rem;
+        font-weight: 100;
+      }
+    }
+
+
+  }
+
+
+  .main-oui {
+    .carousel-oui {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .carousel-container {
+        position: relative;
+        width: 50%;
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+
+        &__slide {
+          display: flex;
+          transition: transform 0.3s ease;
+
+          &__img {
+            position: relative;
+            min-width: 100%;
+            height: 70vh;
+            padding: 1rem 20rem;
+            box-sizing: border-box;
+            overflow: hidden;
+
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+
+        .btn {
+          font-size: 8rem;
+          font-weight: 100;
+        }
+
+        .btn--carousel--left {
+          left: 27%;
+        }
+
+        .btn--carousel--right {
+          right: 27%;
+        }
+      }
+    }
+
+
+
+
+
+  }
+}

@@ -1,0 +1,79 @@
+@include phone {
+
+  .kinisi-main {
+    background-color: $main-color;
+
+    .kinisi-intro {
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: justify;
+    }
+
+    .kinisi-img {
+
+      img,
+      video {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 1rem 1rem 0 1rem;
+        box-sizing: border-box;
+      }
+    }
+
+    .kinisi-contributors {
+      box-sizing: border-box;
+      padding: 1rem;
+
+      p {
+        padding: 0 0 0.5rem 0;
+
+        a:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .kinisi-main {
+    background-color: $main-color;
+    padding: 2rem 20rem;
+
+
+    .kinisi-intro {
+      padding: 2rem 20rem;
+      text-align: center;
+      line-height: 2rem;
+    }
+
+    .kinisi-img {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+
+      img,
+      video {
+        width: 26%;
+        height: 50vh;
+        padding: 1rem;
+        box-sizing: border-box;
+        object-fit: cover;
+      }
+    }
+
+    .kinisi-contributors {
+      box-sizing: border-box;
+      padding: 1rem;
+
+      p {
+        padding: 0 0 0.5rem 0;
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
