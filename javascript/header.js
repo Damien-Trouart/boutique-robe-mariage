@@ -8,7 +8,7 @@ header.innerHTML =
 			<div class="header-bloc__burger">
 				<span id="toggler_burger" onclick="toggler()" class="material-symbols-outlined">menu</span>
 			</div>
-			<img class="header-bloc__main-logo" src="/logo/main-logo.png" alt="logo principal">
+			<img class="header-bloc__main-logo" src="https://picsum.photos/2048/1080?random=11" alt="logo principal">
 		</div>
 		<nav class="menu">
 			<ul class="menu__list">

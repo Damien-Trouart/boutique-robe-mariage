@@ -31,7 +31,7 @@ function createCarousel(carouselInfo) {
         <div class = "carousel-container__slide"> 
           ${carouselInfo.carouselPictures.map(imgPath => `
             <div class = "carousel-container__slide__img">
-              <img src = "${imgPath}" alt = "mariée">
+              <img src = "https://picsum.photos/2048/1080?random=${Math.floor(Math.random() * 10) + 1}" alt = "mariée">
             </div>
           `).join('')}
         </div>
