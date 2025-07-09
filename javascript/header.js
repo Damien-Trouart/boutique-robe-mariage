@@ -6,7 +6,7 @@ header.innerHTML =
 	<div class="header_and_nav">
 		<div class="header-bloc">
 			<div class="header-bloc__burger">
-				<span id="toggler_burger" onclick="toggler()" class="material-symbols-outlined">menu</span>
+				<span id="toggler_burger" class="material-symbols-outlined">menu</span>
 			</div>
 			<img class="header-bloc__main-logo" src="https://picsum.photos/2048/1080?random=11" alt="logo principal">
 		</div>

@@ -1,20 +1,20 @@
-function toggler() {
-  const burger = document.querySelector('#toggler_burger');
-  const menu = document.querySelector('.menu');
+const burger = document.querySelector('#toggler_burger');
+const menuBurger = document.querySelector('.menu');
 
-  if (burger.innerHTML == "menu") {
-    burger.innerHTML = "arrow_back";
-    menu.style.transform = "translateX(0)";
+function toggler() {
+  if (burger.textContent == "menu") {
+    burger.textContent = "arrow_back";
+    menuBurger.style.transform = "translateX(0)";
     body.classList.add('no-scroll');
   }
   else {
-    burger.innerHTML = "menu";
-    menu.style.transform = "translateX(-100%)";
+    burger.textContent = "menu";
+    menuBurger.style.transform = "translateX(-100%)";
     body.classList.remove('no-scroll');
   }
 }
 
-
+burger.addEventListener('click', toggler);
 
 
 // let isScrolling;
