@@ -12,21 +12,21 @@ header.innerHTML =
 		</div>
 		<nav class="menu">
 			<ul class="menu__list">
-				<li><a href="/html/index.html">Home</a></li>
-				<li class="menu__list__collections"><a href="/html/collections.html">Les collections</a>
+				<li><a href="/boutique-robe-mariage/index.html">Home</a></li>
+				<li class="menu__list__collections"><a href="/boutique-robe-mariage/html/collections.html">Les collections</a>
 					<span id=toggle-arrow-down class="material-symbols-outlined">arrow_drop_down</span>
 					</li>
 				<ul class="collections-ul">
-						<li> <a href="/html/vanilla.html"> Collection Vanilla </a> </li>
-						<li> <a href="/html/eunoia.html"> Collection Eunoia </a> </li>
-						<li> <a href="/html/kinisi.html"> Collection Kiniski </a> </li>
+						<li> <a href="/boutique-robe-mariage/html/vanilla.html"> Collection Vanilla </a> </li>
+						<li> <a href="/boutique-robe-mariage/html/eunoia.html"> Collection Eunoia </a> </li>
+						<li> <a href="/boutique-robe-mariage/html/kinisi.html"> Collection Kiniski </a> </li>
 					</ul>
-				
-				
-				<li class="menu__list__oui"><a href="/html/oui.html">Elles ont dit OUI!</a></li>
-				<li><a href="/html/invites.html">Les invités</a></li>
-				<li><a href="/html/about.html">A propos</a></li>
-				<li><a href="/html/contact.html">Contact</a></li>
+
+
+				<li class="menu__list__oui"><a href="/boutique-robe-mariage/html/oui.html">Elles ont dit OUI!</a></li>
+				<li><a href="/boutique-robe-mariage/html/invites.html">Les invités</a></li>
+				<li><a href="/boutique-robe-mariage/html/about.html">A propos</a></li>
+				<li><a href="/boutique-robe-mariage/html/contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</div>

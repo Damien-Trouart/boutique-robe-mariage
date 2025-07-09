@@ -45,11 +45,11 @@ footer.innerHTML =
 			</div>
 		
 			<div class="footer-block__bottom__socials">
-				<a href="" target=_"blank"><img src="/logo/logo-instagram.png" class="logo"
+				<a href="" target=_"blank"><img src="./../logo/logo-instagram.png" class="logo"
 						alt="logo Instagram"></a>
-				<a href="" target=_"blank"><img src="/logo/logo-facebook.png" class="logo"
+				<a href="" target=_"blank"><img src="./../logo/logo-facebook.png" class="logo"
 						alt="logo Facebook"></a>
-				<a href="" target=_"blank"><img src="/logo/logo-pinterest.png"
+				<a href="" target=_"blank"><img src="./../logo/logo-pinterest.png"
 						class="logo" alt="logo Pinterest"></a>
 			</div>
 		</div>
