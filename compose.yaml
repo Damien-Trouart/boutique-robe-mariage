@@ -1,0 +1,40 @@
+services:
+
+  web:
+    image: php:8.2-apache
+    container_name: serverApache_camille_welcomme
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - camille_welcomme_db
+
+  camille_welcomme_db:
+    image: mariadb:10.5
+    container_name: bdd_camille_welcomme
+    restart: unless-stopped
+    environment:
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_DATABASE=camille_welcomme
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d
+    # ports:
+    #   - "3306:3306"
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin_camille_welcomme
+    restart: unless-stopped
+    environment:
+      PMA_HOST: camille_welcomme_db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - "8095:80"
+    depends_on:
+      - camille_welcomme_db
+
+volumes:
+  dbdata:
